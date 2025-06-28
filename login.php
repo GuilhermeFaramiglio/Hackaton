@@ -85,15 +85,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <div id="corpo">
     <h1>Quem somos?</h1>
 
-    <p>A FeedCatch é uma empresa B2B que se destaca no mercado por oferecer uma análise detalhada e estratégica das avaliações de clientes para outras empresas. Nossa essência está em transformar a opinião dos consumidores em insights poderosos que direcionam o crescimento e a melhoria contínua de nossos parceiros de negócios.</p>
+    <p>A FeedCatch é uma empresa B2B que se destaca no mercado por oferecer uma análise detalhada e estratégica das avaliações de clientes para outras empresas. Nossa essência está em transformar a opinião dos consumidores em insights poderosos que direcionam o crescimento e a melhoria contínua de nossos parceiros de negócios.
 
-    <p>Fundada com a visão de que o feedback dos clientes é uma peça-chave para o sucesso empresarial, a FeedCatch utiliza uma combinação de tecnologia avançada e expertise humana para extrair o máximo valor das avaliações online. Nossos analistas são capacitados para utilizar um sistema sofisticado de feedback que permite uma análise profunda e multifacetada dos dados coletados.</p>
+    Fundada com a visão de que o feedback dos clientes é uma peça-chave para o sucesso empresarial, a FeedCatch utiliza uma combinação de tecnologia avançada e expertise humana para extrair o máximo valor das avaliações online. Nossos analistas são capacitados para utilizar um sistema sofisticado de feedback que permite uma análise profunda e multifacetada dos dados coletados.
 
-    <p>Este sistema é a espinha dorsal de nossas operações, permitindo a captura de avaliações em múltiplas plataformas e a aplicação de técnicas de processamento de linguagem natural para discernir sentimentos, tendências e pontos críticos. Através dessa análise, ajudamos nossos clientes a compreender a percepção de sua marca, a eficácia de seus produtos e serviços, e a identificar oportunidades de melhoria.</p>
+    Este sistema é a espinha dorsal de nossas operações, permitindo a captura de avaliações em múltiplas plataformas e a aplicação de técnicas de processamento de linguagem natural para discernir sentimentos, tendências e pontos críticos. Através dessa análise, ajudamos nossos clientes a compreender a percepção de sua marca, a eficácia de seus produtos e serviços, e a identificar oportunidades de melhoria.
 
-    <p>Na FeedCatch, entendemos que cada avaliação é única e carrega consigo a chance de aprimorar a experiência do cliente. Por isso, trabalhamos incansavelmente para oferecer um serviço que não só compila dados, mas também os interpreta de forma a gerar ações concretas. A nossa abordagem permite que as empresas façam ajustes informados, fortaleçam sua reputação e construam uma relação de confiança com seus consumidores.</p>
+    Na FeedCatch, entendemos que cada avaliação é única e carrega consigo a chance de aprimorar a experiência do cliente. Por isso, trabalhamos incansavelmente para oferecer um serviço que não só compila dados, mas também os interpreta de forma a gerar ações concretas. A nossa abordagem permite que as empresas façam ajustes informados, fortaleçam sua reputação e construam uma relação de confiança com seus consumidores.
 
-    <p>Ao optar pela FeedCatch, sua empresa embarca em uma jornada de descoberta e evolução, munida de informações precisas e relevantes sobre o que seus clientes realmente pensam. Estamos aqui para garantir que cada voz seja ouvida e que cada comentário contribua para o sucesso e a excelência de sua marca no competitivo cenário digital atual.</p>
+    Ao optar pela FeedCatch, sua empresa embarca em uma jornada de descoberta e evolução, munida de informações precisas e relevantes sobre o que seus clientes realmente pensam. Estamos aqui para garantir que cada voz seja ouvida e que cada comentário contribua para o sucesso e a excelência de sua marca no competitivo cenário digital atual.</p>
 </div>
 </body>
  
