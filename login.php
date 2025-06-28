@@ -73,11 +73,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <?php
         echo ('<p>Crie o seu Cadastro <a href="cadastrausuario.php">Clique aqui</a>.</p>');   
         ?>
-        <?php
-        if (isset($_GET['msg'])) {
-        echo ('<p>Esqueceu a senha? <a href="recupera.php">Clique aqui</a>.</p>');
-        }
-        ?>
         <br>
         <input type="submit" value="Entrar">
         <img src="imgs/feedcatch.png" alt="logo da marca FeedCatch">
