@@ -1,7 +1,7 @@
 /* Estilo para a página */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #110e2d;
     /* Fundo escuro */
     color: #e0e0e0;
@@ -25,7 +25,7 @@ h2 {
 }
 
 #corpo{
-    margin-left: 410px;
+    margin-left: 450px;
 }
 
 /* Estilo para o formulário */
