@@ -57,6 +57,7 @@ form {
     float: left; 
     margin: 0 19px 19px 0; 
     width: 400px;
+    border-radius: 4px;
 }
 
 /* Estilo para os rótulos */
