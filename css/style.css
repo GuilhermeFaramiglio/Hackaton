@@ -32,7 +32,7 @@ form {
     background-color: #19143dc7;
     border: 1px solid #2c2948;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px -4px 20px rgba(0, 0, 0, 0.5);
     position: fixed;
     left: 0;
     height: 100%;
