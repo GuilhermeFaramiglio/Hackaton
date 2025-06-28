@@ -4,14 +4,12 @@
 include('utils/conectadb.php');
 
 session_start();
-$_SESSION['idusuario'] = 1;
-$_SESSION['nomeusuario'] = 'Usuário Demo';
-
-if (isset($_SESSION['idusuario']) && isset($_SESSION['nomeusuario'])) {
-    $idusuario = $_SESSION['idusuario'];
-    $nomeusuario = $_SESSION['nomeusuario'];
+if (isset($_SESSION['usuario'])) {
+    $usuario = $_SESSION['usuario'];
 } else {
-    $nomeusuario = 'Visitante';
+    echo "<script>alert('Usuário não logado!');</script>";
+    echo "<script>window.location.href = 'login.php';</script>";
+    exit();
 }
 
 $where_clauses = [];
