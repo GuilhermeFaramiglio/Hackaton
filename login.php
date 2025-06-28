@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
  
     <form action="login.php" method="post">
         <h2>Faça Login na sua conta</h2>
-        <label for="usuario">E-mail:</label>
+        <label for="usuario">Nome:</label>
         <input type="usuario" id="usuario" name="usuario" required>
         <br>
         <label for="senha">Senha:</label>
