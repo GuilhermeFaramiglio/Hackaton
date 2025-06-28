@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    include('conectadb.php');
+    include('utils/conectadb.php');
     include('func.php');
 
     $usuario = $_POST['usuario'];
