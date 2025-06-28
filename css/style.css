@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #141034;
+    background-color: #110e2d;
     /* Fundo escuro */
     color: #e0e0e0;
     /* Texto claro */
@@ -29,7 +29,7 @@ form {
     width: 100%;
     max-width: 400px;
     padding: 20px;
-    background-color: #19143dc7;
+    background-color: #141034;
     border: 1px solid #2c2948;
     border-radius: 8px;
     box-shadow: 4px -4px 20px rgba(0, 0, 0, 0.5);
@@ -39,6 +39,7 @@ form {
 }
 
 img {
+    padding: 72px;
     width: 70%;
 }
 /* Estilo para os rótulos */
