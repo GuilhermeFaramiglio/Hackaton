@@ -33,6 +33,7 @@ form {
     border: 1px solid #2c2948;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: left 0;
 }
 
 /* Estilo para os rótulos */
