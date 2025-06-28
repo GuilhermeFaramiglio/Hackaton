@@ -24,12 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     while ($tbl = mysqli_fetch_array($result)) {
         $contagem = $tbl[0];
     }
- 
-    if ($contagem == 0) {
-        // Usuário ou senha incorreto
-        header('Location: login.php?msg=E-mail%20ou%20Senha%20incorreto(a)!');
-        exit();
-    }
+
     // Senha e usuário correto
     $sql = " SELECT I_COD_USUARIO, S_UNM_USUARIO FROM tb_usuario WHERE S_UNM_USUARIO = '$usuario' AND S_PW_USUARIO = '$senha' ";
     $result = mysqli_query($link, $sql);
@@ -39,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     session_start();
     $_SESSION['I_COD_CLIENTE'] = $id;
-    $_SESSION['S_NM_CLIENTE'] = $nome;
+    $_SESSION['S_UNM_CLIENTE'] = $nome;
     header('Location: dashboard.php');
     exit();
 }
