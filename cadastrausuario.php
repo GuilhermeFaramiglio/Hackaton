@@ -6,12 +6,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nome = $_POST['nome'];
     $senha = $_POST['senha'];
     $senha2 = $_POST['confirmar_senha'];
-    $tipo = $_POST['tipo_usuario'];
-    
+    $tipoUsuario  = intval($_POST['tipo_usuario']);
+
     $senha = criptografa($senha); // Apenas uma vez!
    
-    $sql = " INSERT INTO tb_usuario (S_UNM_USUARIO, S_PW_USUARIO)
-     VALUES ('$nome', '$senha'); "; // comando
+    $sql = " INSERT INTO tb_usuario (S_UNM_USUARIO, S_PW_USUARIO, S_NOME_EMPRESA)
+     VALUES ('$nome', '$senha', $tipoUsuario); "; // comando
     $result = mysqli_query($link, $sql);
     header('Location: login.php');
     exit();
