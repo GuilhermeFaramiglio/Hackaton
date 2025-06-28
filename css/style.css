@@ -38,6 +38,9 @@ form {
     height: 100%;
 }
 
+img {
+    width: 70%;
+}
 /* Estilo para os rótulos */
 label {
     margin-bottom: 5px;

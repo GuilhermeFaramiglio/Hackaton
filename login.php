@@ -80,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ?>
         <br>
         <input type="submit" value="Entrar">
-        <img src="/imgs/feedcatch.png" alt="logo da marca FeedCatch">
+        <img src="imgs/feedcatch.png" alt="logo da marca FeedCatch">
     </form>
 
     
