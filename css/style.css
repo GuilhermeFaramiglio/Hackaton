@@ -24,6 +24,10 @@ h2 {
     color: #14acdc;
 }
 
+.corpo{
+    margin-left: 410px;
+}
+
 /* Estilo para o formulário */
 form {
     display: flex;
