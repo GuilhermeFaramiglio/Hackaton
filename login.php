@@ -56,7 +56,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
  
 <body>
-    <h1>Faça Login na sua conta</h1>
     <?php
     if (isset($_GET['msg'])) {
         echo ('<p id="msg_error">' . $_GET['msg'] . '</p>');
@@ -64,6 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     ?>
  
     <form action="login.php" method="post">
+        <h1>Faça Login na sua conta</h1>
         <label for="usuario">E-mail:</label>
         <input type="usuario" id="usuario" name="usuario" required>
         <br>

@@ -27,13 +27,15 @@ form {
     align-items: center;
     /* Garante alinhamento central */
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     padding: 20px;
     background-color: #19143dc7;
     border: 1px solid #2c2948;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    position: left 0;
+    position: fixed;
+    left: 0;
+    height: 100%;
 }
 
 /* Estilo para os rótulos */
