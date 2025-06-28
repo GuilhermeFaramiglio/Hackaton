@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="password" id="senha" name="senha" required>
         <br>
         <?php
-        echo ('<p>Crie o seu Login<a href="cadastrausuario.php">Clique aqui</a>.</p>');   
+        echo ('<p>Crie o seu Login <a href="cadastrausuario.php">Clique aqui</a>.</p>');   
         ?>
         <?php
         if (isset($_GET['msg'])) {
@@ -80,7 +80,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ?>
         <br>
         <input type="submit" value="Entrar">
+        <img src="/imgs/feedcatch.png" alt="logo da marca FeedCatch">
     </form>
+
+    
  
 </body>
  
