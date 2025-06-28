@@ -13,7 +13,7 @@ if (isset($_SESSION['idusuario']) && isset($_SESSION['nomeusuario'])) {
 }
 
 
-if (!$db_connection_error) {
+
     $sentimentos = ['positivo' => 0, 'neutro' => 0, 'negativo' => 0];
     $result_sentimentos = $link->query("SELECT I_SENT_FEEDBACK, COUNT(*) as count FROM TB_FEEDBACK GROUP BY I_SENT_FEEDBACK");
     if ($result_sentimentos) {
@@ -24,7 +24,7 @@ if (!$db_connection_error) {
             }
         }
     }
-}
+
     $campanhas = $link->query("SELECT I_COD_CAMPANHA, S_NM_CAMPANHA FROM TB_CAMPANHA ORDER BY S_NM_CAMPANHA ASC");
     $produtos = $link->query("SELECT I_COD_PRODUTO, S_NM_PRODUTO FROM TB_PRODUTO ORDER BY S_NM_PRODUTO ASC");
  
@@ -114,12 +114,7 @@ if (!$db_connection_error) {
     <!-- Main Content -->
     <main class="container mx-auto p-4 sm:p-6 lg:p-8">
  
-        <?php if ($db_connection_error): ?>
-            <div class="bg-red-800 border border-red-700 text-white px-4 py-3 rounded-lg relative" role="alert">
-                <strong class="font-bold"><i class="fas fa-exclamation-triangle mr-2"></i>Erro!</strong>
-                <span class="block sm:inline"><?php echo htmlspecialchars($db_connection_error); ?></span>
-            </div>
-        <?php else: ?>
+        
  
         <!-- Stats Cards -->
         <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
@@ -243,7 +238,6 @@ if (!$db_connection_error) {
                 <?php endif; ?>
             </div>
         </section>
-        <?php endif; ?>
     </main>
  
 </body>
