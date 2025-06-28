@@ -1,30 +1,24 @@
-FeedCatch - Análise de Feedbacks
+#FeedCatch - Análise de Feedbacks
+
 📊 Visão Geral
 O FeedCatch é uma solução web desenvolvida para empresas B2B que desejam analisar feedbacks e avaliações recebidas pelos seus produtos ou serviços. Nosso sistema permite categorizar, filtrar e analisar os dados provenientes de avaliações, oferecendo insights precisos para tomadas de decisão.
 
 Este projeto foi desenvolvido em PHP + MySQL, com interface web intuitiva e recursos de segurança como criptografia de senhas.
 
-🚀 Funcionalidades
+🚀 Funcionalidades:
+
 🔍 Categorização de Feedbacks (Positivo, Neutro, Negativo)
-
 📑 Análise Detalhada dos Feedbacks
-
 🔎 Filtragem dos Dados por Campanha, Produto ou Tipo de Feedback
-
 👥 Cadastro e Gerenciamento de Usuários
-
 🔐 Login Seguro com Senhas Criptografadas
-
 📈 Dashboard Interativo com Visão Geral dos Dados
 
 🛠️ Tecnologias Utilizadas
-Back-end: PHP 8+
-
+Back-end: PHP
 Banco de Dados: MySQL
-
-Front-end: HTML5, CSS3, JavaScript
-
-Outros: Bootstrap, Chart.js (para gráficos)
+Front-end: HTML5, CSS3
+Outros: Tailwind
 
 📂 Estrutura das Telas
 🔐 Tela de Login
