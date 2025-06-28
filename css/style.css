@@ -11,13 +11,17 @@ body {
     align-items: center;
     padding: 20px;
 }
+h1{
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #15a5d1;
+}
 
 /* Estilo para o título */
-h1 {
+h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #14acdc;
-    
 }
 
 /* Estilo para o formulário */
