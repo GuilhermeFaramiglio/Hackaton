@@ -1,22 +1,18 @@
 <?php
+include('utils/conectadb.php');
  
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    include('conndb.php');
     include('func.php');
     $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $endereco = $_POST['endereco'];
-    $cpf = $_POST['cpf'];
-    $telefone = $_POST['telefone'];
     $senha = $_POST['senha'];
     $senha2 = $_POST['confirmar_senha'];
+    $tipo = $_POST['tipo_usuario'];
+    
     $senha = criptografa($senha); // Apenas uma vez!
    
-   
-    $sql = " INSERT INTO tb_cliente (S_NM_CLIENTE, S_EMAIL_CLIENTE, S_ENDER_CLIENTE, S_CPF_CLIENTE, S_TEL_CLIENTE,
-    S_PASS_CLIENTE)
-     VALUES ('$nome', '$email', '$endereco', '$cpf', '$telefone', '$senha'); "; // comando
-    mysqli_query($conn, $sql);
+    $sql = " INSERT INTO tb_usuario (S_UNM_USUARIO, S_PW_USUARIO)
+     VALUES ('$nome', '$senha'); "; // comando
+    $result = mysqli_query($link, $sql);
     header('Location: login.php');
     exit();
 }
@@ -50,26 +46,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" maxlength="100" required>
         <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" maxlength="50" required>
-        <br>
-        <label for="endereco">Endereço:</label>
-        <input type="text" id="endereco" name="endereco" maxlength="100" required>
-        <br>
-        <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" name="cpf" maxlength="14" required>
-        <br>
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" maxlength="19" required>
-        <br>
         <label for="senha">Senha:</label>
         <input type="password" id="senha" name="senha" required>
         <br>
         <label for="confirmar_senha">Confirmar Senha:</label>
         <input type="password" id="confirmar_senha" name="confirmar_senha" required>
         <br>
+        <label>INICIAR USUARIO COMO:</label>
+            <div class='rbcliente'>   
+                <input type="radio" name="tipo_usuario" id="externo" value="1" checked><label>Cliente Externo</label>
+                <br>
+                <input type="radio" name="tipo_usuario" id="inativo" value="0"><label>Funcionario Interno</label>
+            </div>
         <input type="Submit" value="Cadastrar">
- 
     </form>
 </body>
  
