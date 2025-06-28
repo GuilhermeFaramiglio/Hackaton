@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     session_start();
     $_SESSION['I_COD_CLIENTE'] = $id;
     $_SESSION['S_NM_CLIENTE'] = $nome;
-    header('Location: index.php');
+    header('Location: dashboard.php');
     exit();
 }
 ?>
