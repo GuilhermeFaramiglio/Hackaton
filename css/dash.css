@@ -1,22 +1,110 @@
+/* Estilo geral inspirado no style.css */
 body {
-    background-color: #111827; /* bg-gray-900 */
+    background-color: #110e2d; /* Cor de fundo principal do style.css */
+    color: #e0e0e0;           /* Cor de texto principal do style.css */
+    font-family: 'Courier New', Courier, monospace;
 }
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #374151; /* bg-gray-700 */
-    z-index: 50;
-    border-radius: 0.5rem; /* rounded-lg */
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+/* Header */
+header.bg-gray-800 {
+    background-color: #141034; /* Cor de container do style.css */
+    border-bottom: 1px solid #2c2948;
+    box-shadow: 4px -4px 20px rgba(0, 0, 0, 0.5);
 }
-.dropdown:hover .dropdown-menu {
-    display: block;
+
+header h1 {
+    color: #15a5d1; /* Cor do título h1 do style.css */
 }
+
+header a, header span {
+    color: #e0e0e0;
+}
+header a:hover {
+    color: #14acdc;
+}
+
+/* Cor de fundo para seções e cards */
+.bg-gray-800 {
+    background-color: #141034; /* Cor de container do style.css */
+    border: 1px solid #2c2948;
+    box-shadow: 4px -4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Cor de fundo para itens individuais da lista e dropdowns */
+.bg-gray-700, .dropdown-menu {
+    background-color: #211b4bc7; /* Cor de input do style.css */
+    border: 1px solid #2c2948;
+}
+
+/* Textos e Títulos */
+h1, h2, h3 {
+    color: #14acdc; /* Cor geral para títulos */
+}
+
+p, span, label {
+    color: #e0e0e0; /* Cor de texto padrão */
+}
+
+/* Cor para textos secundários (metadados) */
+.text-gray-400 {
+    color: #a0a0a0;
+}
+
+/* Botões de Filtro */
+.dropdown button {
+    background-color: #14acdc;
+    color: #121212;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown button:hover {
+    background-color: #9cedff;
+}
+
+/* Badge de contagem do filtro */
 .filter-badge {
-    background-color: #4f46e5; /* bg-indigo-600 */
+    background-color: #8b0000; /* Cor de destaque dos botões do style.css */
     color: white;
     padding: 2px 8px;
     border-radius: 9999px;
     font-size: 0.75rem;
     margin-left: 8px;
 }
+
+/* Link para Limpar Filtros */
+a.text-indigo-400 {
+    color: #14acdc;
+}
+a.text-indigo-400:hover {
+    color: #9cedff;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 50;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Checkbox (para combinar com o estilo) */
+input[type="checkbox"] {
+    background-color: #211b4bc7;
+    border: 1px solid #2c2948;
+}
+input[type="checkbox"]:checked {
+    background-color: #14acdc;
+}
+
+/* Ícones de Sentimento (mantendo as cores originais por clareza) */
+.text-green-400 { color: #4ade80; }
+.text-yellow-400 { color: #facc15; }
+.text-red-400 { color: #f87171; }
