@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    include('conndb.php');
+    include('conectadb.php');
     include('func.php');
 
     $usuario = $_POST['usuario'];
@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha = criptografa($senha);
    
     $sql = "SELECT COUNT(*) FROM tb_usuario WHERE S_UNM_USUARIO = '$usuario'";
-    $result = mysqli_query($conn, $sql);
+    $result = mysqli_query($link, $sql);
     $count = mysqli_fetch_assoc($result);
  
     // Usuário não existe
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     
     $sql = " SELECT COUNT(*) FROM tb_usuario WHERE S_UNM_USUARIO = '$usuario' AND S_PW_USUARIO = '$senha'";
-    $result = mysqli_query($conn, $sql);
+    $result = mysqli_query($link, $sql);
    
     while ($tbl = mysqli_fetch_array($result)) {
         $contagem = $tbl[0];
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     // Senha e usuário correto
     $sql = " SELECT I_COD_USUARIO, S_UNM_USUARIO FROM tb_usuario WHERE S_UNM_USUARIO = '$usuario' AND S_PW_USUARIO = '$senha' ";
-    $result = mysqli_query($conn, $sql);
+    $result = mysqli_query($link, $sql);
     while ($tbl = mysqli_fetch_array($result)) {
         $id = $tbl[0];
         $nome = $tbl[1];
