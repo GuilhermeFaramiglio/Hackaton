@@ -45,7 +45,7 @@ label {
 /* Ajuste para os campos de entrada */
 input[type="text"],
 input[type="tel"],
-input[type="email"],
+input[type="usuario"],
 input[type="password"],
 select {
     width: calc(100% - 20px);

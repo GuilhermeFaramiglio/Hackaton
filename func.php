@@ -1,17 +1,12 @@
 <?php
-
- 
- 
 function criptografa($password)
 {
-    // Vetor de bytes (IV) conforme definido no script C#
+    // Vetor de bytes (IV) 
     $iv = pack("H*", "5008f1ddde3cf2184474192c5349abbc");
- 
-    // Chave interna em Base64 conforme definido no script C#
+    // Chave interna em Base64 
     $cryptoKey = "Q3JpcHRvZ3JhZmlhcyBjb20gUmluamRhZWwgLyBBRVM=";
     // Decodifica a chave para o formato binário
     $key = base64_decode($cryptoKey);
- 
     // Criptografa a senha
     if (!empty($password)) {
         // Criptografa utilizando o método aes-256-cbc e retorno em dados binários
@@ -24,17 +19,14 @@ function criptografa($password)
     }
     return null;
 }
- 
 function desCriptografa($encryptedPassword)
 {
-    // Vetor de bytes (IV) conforme definido no script C#
+    // Vetor de bytes (IV) conforme definido no script 
     $iv = pack("H*", "5008f1ddde3cf2184474192c5349abbc");
- 
-    // Chave interna em Base64 conforme definido no script C#
+    // Chave interna em Base64 conforme definido no script 
     $cryptoKey = "Q3JpcHRvZ3JhZmlhcyBjb20gUmluamRhZWwgLyBBRVM=";
     // Decodifica a chave para o formato binário
     $key = base64_decode($cryptoKey);
-   
     // Descriptografa a senha
     if (!empty($encryptedPassword)) {
         // Converte a senha criptografada de Base64 para binário
@@ -48,6 +40,5 @@ function desCriptografa($encryptedPassword)
     }
     return null;
 }
- 
 ?>
  

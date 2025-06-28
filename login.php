@@ -1,15 +1,14 @@
 <?php
- 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     include('conndb.php');
     include('func.php');
 
-    $email = $_POST['email'];
+    $usuario = $_POST['usuario'];
     $senha = $_POST['senha'];
     
     $senha = criptografa($senha);
    
-    $sql = "SELECT COUNT(*) FROM tb_cliente WHERE S_EMAIL_CLIENTE = '$email'";
+    $sql = "SELECT COUNT(*) FROM tb_usuario WHERE S_UNM_USUARIO = '$usuario'";
     $result = mysqli_query($conn, $sql);
     $count = mysqli_fetch_assoc($result);
  
@@ -19,8 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
     }
     
-    $sql = " SELECT COUNT(*) FROM tb_cliente WHERE S_EMAIL_CLIENTE = '$email' AND S_PASS_CLIENTE = '$senha'";
-    echo $sql;
+    $sql = " SELECT COUNT(*) FROM tb_usuario WHERE S_UNM_USUARIO = '$usuario' AND S_PW_USUARIO = '$senha'";
     $result = mysqli_query($conn, $sql);
    
     while ($tbl = mysqli_fetch_array($result)) {
@@ -33,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
     }
     // Senha e usuário correto
-    $sql = " SELECT I_COD_CLIENTE , S_NM_CLIENTE FROM tb_cliente WHERE S_EMAIL_CLIENTE = '$email' AND S_PASS_CLIENTE = '$senha' ";
+    $sql = " SELECT I_COD_USUARIO, S_UNM_USUARIO FROM tb_usuario WHERE S_UNM_USUARIO = '$usuario' AND S_PW_USUARIO = '$senha' ";
     $result = mysqli_query($conn, $sql);
     while ($tbl = mysqli_fetch_array($result)) {
         $id = $tbl[0];
@@ -42,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     session_start();
     $_SESSION['I_COD_CLIENTE'] = $id;
     $_SESSION['S_NM_CLIENTE'] = $nome;
-    header('Location: principal.php');
+    header('Location: index.php');
     exit();
 }
 ?>
@@ -65,8 +63,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     ?>
  
     <form action="login.php" method="post">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="usuario">E-mail:</label>
+        <input type="usuario" id="usuario" name="usuario" required>
         <br>
         <label for="senha">Senha:</label>
         <input type="password" id="senha" name="senha" required>
