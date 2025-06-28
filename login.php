@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ?>
         <br>
         <input type="submit" value="Entrar">
-        <img src="imgs/feedcatch.png" alt="logo da marca FeedCatch">
+        <img id ="logo" src="imgs/feedcatch.png" alt="logo da marca FeedCatch">
     </form>
 <div id="corpo">
     <h1>Quem somos?</h1>
