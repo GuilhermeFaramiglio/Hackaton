@@ -1,7 +1,8 @@
 /* Estilo para a página */
 body {
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
     background-color: #110e2d;
     /* Fundo escuro */
     color: #e0e0e0;
@@ -50,6 +51,14 @@ img {
     padding: 72px;
     width: 70%;
 }
+
+#cara{
+
+    float: left; 
+    margin-right: 10px; 
+      
+}
+
 /* Estilo para os rótulos */
 label {
     margin-bottom: 5px;
