@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     session_start();
     $_SESSION['I_COD_CLIENTE'] = $id;
     $_SESSION['S_NM_CLIENTE'] = $nome;
-    header('Location: index.php');
+    header('Location: dashboard.php');
     exit();
 }
 ?>
@@ -72,11 +72,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <br>
         <?php
         echo ('<p>Crie o seu Cadastro <a href="cadastrausuario.php">Clique aqui</a>.</p>');   
-        ?>
-        <?php
-        if (isset($_GET['msg'])) {
-        echo ('<p>Esqueceu a senha? <a href="recupera.php">Clique aqui</a>.</p>');
-        }
         ?>
         <br>
         <input type="submit" value="Entrar">
